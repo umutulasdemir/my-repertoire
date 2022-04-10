@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201B1B"
+    android:focusableInTouchMode="true"
+    tools:context=".Fragments.TabFragment2">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pagerLayout2"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"
+            android:id="@+id/filterSpinnerLayout2"
+            android:layout_marginTop="@dimen/_2sdp">
+            <Spinner
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_160sdp"
+                android:background="@color/colorQuickActionsBackground"
+                android:fontFamily="@font/heebo_light"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/filter2Spinner1"
+                android:layout_height="match_parent"/>
+            <Spinner
+                android:background="@color/colorQuickActionsBackground"
+                android:layout_marginLeft="@dimen/_160sdp"
+                android:fontFamily="@font/heebo_light"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorWhite"
+                android:hint="Enter The Attributes Of The Song"
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/filter2Spinner2"
+                android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/songRecyclerView2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias=".376">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

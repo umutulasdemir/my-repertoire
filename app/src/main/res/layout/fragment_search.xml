@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_270sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#201B1B">
+
+    <LinearLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="@dimen/_75sdp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="@dimen/_245sdp">
+        <TextView
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:text="Cancel"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/heebo_regular"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSearchForFragment"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/backround3"
+        android:paddingStart="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_10sdp"
+        >
+
+        <ImageView
+            android:id="@+id/searchImageForFragment"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_search"
+            app:tint="@color/colorSearchIcon" />
+        <EditText
+            android:cursorVisible="true"
+            android:id="@+id/editTextSearchForFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:includeFontPadding="false"
+            android:background="@null"
+            android:hint="Search Tags"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorTextHint"
+            android:textSize="@dimen/_13ssp"
+            />
+        <requestFocus/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_360sdp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/searchListLayout"
+        >
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#201D1D"
+        android:id="@+id/tagSearchRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>

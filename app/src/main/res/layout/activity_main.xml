@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201B1B"
+    android:onClick="hideKeyboard"
+    tools:context=".Activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_marginRight="@dimen/_180sdp"
+            android:id="@+id/textMyTags"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:text=" sahne şov evi"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintRight_toLeftOf="@+id/profileMainPage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:background="#201B1B"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_lens_blur_24"
+            android:layout_marginLeft="@dimen/_100sdp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/fragmentChangeButton">
+        </ImageButton>
+        <ImageButton
+            android:background="#201B1B"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/fragmentChangeButton2">
+        </ImageButton>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentLayout"
+        app:layout_constraintTop_toBottomOf="@+id/topId"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_48sdp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_45sdp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#201B1B"
+        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:menu="@menu/item_menu"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

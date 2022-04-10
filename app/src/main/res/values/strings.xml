@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">sahneovevi</string>
+    <string name="the_sayko_tags">The Sayko Tags</string>
+    <string-array name="attributes1">
+        <item>Hareketli</item>
+        <item>Yavas</item>
+    </string-array>
+    <string-array name="attributes2">
+        <item>Yerli</item>
+        <item>Yabanci</item>
+    </string-array>
+    <string-array name="attributes3">
+        <item>C</item>
+        <item>C#</item>
+        <item>Db</item>
+        <item>D</item>
+        <item>D#</item>
+        <item>Eb</item>
+        <item>E</item>
+        <item>F#</item>
+        <item>Gb</item>
+        <item>G</item>
+        <item>G#</item>
+        <item>Ab</item>
+        <item>A</item>
+        <item>A#</item>
+        <item>Bb</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="filterAttributes2">
+        <item>None</item>
+        <item>Yerli</item>
+        <item>Yabanci</item>
+    </string-array>
+    <string-array name="filterAttributes1">
+        <item>None</item>
+        <item>Hareketli</item>
+        <item>Yavas</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

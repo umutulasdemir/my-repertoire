@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "817316199758",
+    "firebase_url": "https://sahne-sov-evi-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sahne-sov-evi",
+    "storage_bucket": "sahne-sov-evi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817316199758:android:0f0a037aeb8bb406a3721f",
+        "android_client_info": {
+          "package_name": "com.example.sahneovevi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817316199758-e8ags28nmtq5gjfo48uhgjdfv34oj0s4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOqbe2iPBIFxZYr6EoqTyF9RUfTg8Kcm4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817316199758-e8ags28nmtq5gjfo48uhgjdfv34oj0s4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

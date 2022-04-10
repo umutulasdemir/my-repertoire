@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#1D1D1E">
+
+
+        <TextView
+            android:layout_marginRight="@dimen/_60sdp"
+            android:id="@+id/contextZone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/heebo_light"
+            android:text="ahmet nasılsın"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/peopleCount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextHint"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="1000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="340dp"/>
+
+        <TextView
+            android:id="@+id/lineZoneForTags"
+            android:textSize="5sp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/colorTextHint"
+            android:text="--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

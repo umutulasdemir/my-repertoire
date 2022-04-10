@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMiscellaneousBackground">
+    <LinearLayout
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:id="@+id/mostUpper"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="@dimen/_35sdp">
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/heebo_black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Add The New Song"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_17sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/songNameZone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorQuickActionsBackground"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_45sdp">
+        <EditText
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/colorIcons"
+            android:hint="Enter The Name Of The Song"
+            android:fontFamily="@font/heebo_light"
+            android:id="@+id/editTextSongName"
+            android:textSize="@dimen/_10sdp"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorQuickActionsBackground"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/of"
+        android:layout_marginTop="@dimen/_80sdp">
+        <Spinner
+
+            android:fontFamily="@font/heebo_light"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:hint="Enter The Tone Of The Song"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/attribute3"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:id="@+id/spinner2Layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_115sdp">
+        <Spinner
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_150sdp"
+            android:background="@color/colorQuickActionsBackground"
+            android:fontFamily="@font/heebo_light"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/attributeSpinner1"
+            android:layout_height="match_parent"/>
+        <Spinner
+            android:background="@color/colorQuickActionsBackground"
+            android:layout_marginLeft="@dimen/_150sdp"
+            android:fontFamily="@font/heebo_light"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorWhite"
+            android:hint="Enter The Attributes Of The Song"
+            android:textSize="@dimen/_10sdp"
+            android:id="@+id/attributeSpinner2"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:background="@color/colorQuickActionsBackground"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_160sdp">
+        <EditText
+            android:gravity="top|left"
+            android:background="@android:color/transparent"
+            android:id="@+id/editTextChords"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/heebo_light"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constrainedWidth="true"
+            android:textColorHint="@color/colorIcons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supermarketTextView"
+            android:hint="Enter The Chords Of The Song" />
+
+    </LinearLayout>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/editTextSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background2_search"
+        android:textColorHint="@color/colorDelete"
+        android:textColor="@color/colorDefaultNoteColour"
+        android:textStyle="bold"
+        android:layout_height="@dimen/_30sdp"
+        android:id="@+id/addSongButton"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textSize="@dimen/_18sdp"
+        android:text="CREATE"
+        android:fontFamily="@font/heebo_light"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
